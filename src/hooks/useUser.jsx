@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 import { UserContext } from '../context/UserContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 export const useUser = () => {
     const navigate = useNavigate();
@@ -18,6 +18,7 @@ export const useUser = () => {
 
 	const onLogin = (e) => {
 		e.preventDefault();
+		console.log('onLogin');
 		const localUser = {
 			name: name,
 			password: password,
@@ -29,9 +30,10 @@ export const useUser = () => {
 		setLogged(true);
 
 		const lastPath = localStorage.getItem('lastPath') || '/';
-		navigate(lastPath, {
-			replace: true,
-		});
+		navigate('/main');
+		// navigate(lastPath, {
+		// 	replace: true,
+		// });
 	};
 
 	return { setUser, setLogged, handleName, handlePassword, onLogin };

@@ -22,7 +22,7 @@ function LoginPage() {
         </div>
 
       
-      <form onSubmit={(event) => onLogin(event)}>
+      <form>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <input type="text" name="username" placeholder='Usuario' onChange={handleName} />
           <br />
@@ -30,7 +30,7 @@ function LoginPage() {
 
         </div>
         <p />
-        <Link to = "/main"><button className='boton-inicio' type="submit">Sign in</button></Link>
+        <Link to="/main" ><button className='boton-inicio' onClick={onLogin} type="submit">Sign in</button></Link>
         <Link to = "/register"><button className='boton-inicio' >Register</button> </Link>
       </form>
 
