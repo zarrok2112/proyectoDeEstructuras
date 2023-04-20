@@ -1,0 +1,115 @@
+.login-page {
+    background-color: #212121;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  form {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: white;
+    background-color: #212121;
+  }
+  
+  .submit-btn,
+  .google-btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover,
+  .google-btn:hover {
+    background-color: #555;
+  }
+  
+  .google-icon {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+ 
+  .logo-container{
+    height: 400px;
+    width: 350px;
+  }
+
+  .boton-inicio{
+    background-color: #1a7333;
+    align-self: center;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .boton-inicio:hover {
+    background-color: #154924;
+    transition: background-color 0.4s ease-in-out;
+    cursor: pointer;
+  }
+
+  nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid #595959;
+    background-color: #333;
+  }
+
+  #logo-nav{
+    height: 50px;
+    width: 150px;
+  }

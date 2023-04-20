@@ -1,0 +1,16 @@
+.contenedor_error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.imagen_error {
+    width: 20%;
+    height: auto;
+}
+
+h1, h2 {
+    color: #1A7333;
+}
